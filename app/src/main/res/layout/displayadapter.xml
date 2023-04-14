@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#5a5a5a"
+    android:layout_marginEnd="6dp"
+    android:layout_marginStart="6dp"
+    android:padding="5dp">
+   <com.google.android.material.card.MaterialCardView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="10dp"
+       android:layout_marginStart="8dp"
+       android:layout_marginEnd="8dp"
+       app:cardCornerRadius="10dp"
+       android:elevation="10dp">
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:padding="6dp">
+          <RelativeLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+              <ImageView
+                  android:layout_width="200dp"
+                  android:layout_height="150dp"
+                  android:layout_gravity="center"
+                  android:layout_marginTop="6dp"
+                  android:layout_marginStart="4dp"
+                  android:src="@mipmap/ic_launcher_round"
+                  android:scaleType="centerCrop"
+                  android:layout_marginBottom="6dp"
+                  android:id="@+id/image_view_display"/>
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Title"
+                  android:layout_marginStart="7dp"
+                  android:layout_marginTop="10dp"
+                  android:textStyle="bold"
+                  android:textSize="20sp"
+                 android:layout_toEndOf="@id/image_view_display"
+                  android:layout_marginRight="12dp"
+                  android:maxHeight="1dp"
+                  android:maxLines="3"
+                  android:id="@+id/txtTitleDisplay"/>
+              <ImageButton
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:src="@drawable/ic_baseline_delete_24"
+                  android:layout_gravity="bottom"
+                  android:layout_alignParentBottom="true"
+                  android:layout_alignParentEnd="true"
+                  android:background="@color/white"
+                  android:layout_marginEnd="7dp"
+                  android:id="@+id/btnDelete"/>
+
+          </RelativeLayout>
+
+
+      </LinearLayout>
+   </com.google.android.material.card.MaterialCardView>
+
+</RelativeLayout>

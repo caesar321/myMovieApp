@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">My Movie</string>
+    <string name="open">open Navigation</string>
+    <string name="close">close Navigation</string>
+</resources>
